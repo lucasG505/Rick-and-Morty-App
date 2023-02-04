@@ -40,7 +40,7 @@ function App() {
   let username="lucas.mariano.g@gmail.com";
   let password="1234567s";
   const onSearch = (id) => {
-    fetch(`http://localhost:3001/rickandmorty/character/${id}`)
+    fetch(`http://localhost:3001/rickandmorty/onsearch/${id}`)
       .then(res => res.json())
       .then(data => {
         if (data.name) {
